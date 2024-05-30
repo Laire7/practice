@@ -1,9 +1,9 @@
-
+/*
 console.log('\n--for문을 이용하여 다음과 같이 정확한 숫자를 출력하는 코드를 작성하시오.--');
 for(let i = 0.1; i < 0.9 ; i += 0.1) 
    console.log(i.toFixed(1)); 
 console.log(1);
-
+*/
 //포기한 코드
 // for(let i = 0.1; i < 1 ; i += 0.1) {
 //     console.log(i*10);
@@ -52,23 +52,27 @@ console.log(`오늘은 ${WEEK_NAMES[today.getDay()]}요일 입니다!`);
 //         break;
 //     }
 // console.log(`오늘은 ${DAY_OF_WEEK}요일 입니다!`);
+*/
 
+// console.log('\n--다음과 같이 올바른 더하기 연산을 하는 addPoints 함수를 작성하시오.--');
+// //(단, 소숫점 자리수는 긴쪽에 맞춘다)
+// function addPoints(a, b) {
+//     var a_length=0, b_length=0;
+//     a_length=a.toString().length-2;
+//     b_length=b.toString().length-2;
+//     console.log((a+b).toFixed(a_length>b_length? a_length: b_length));
+// }
 
+// function addPoints(a, b) {
+//     var a_length=0, b_length=0;
+//     while (a.toFixed(a_length)!=a) a_length++;
+//     while (b.toFixed(b_length)!=b) b_length++;
+//     console.log((a+b).toFixed(a_length>b_length? a_length: b_length));
+// }
 
-
-
-console.log('\n--다음과 같이 올바른 더하기 연산을 하는 addPoints 함수를 작성하시오.--');
-//(단, 소숫점 자리수는 긴쪽에 맞춘다)
-function addPoints(a, b) {
-    var a_length=0, b_length=0;
-    while (a.toFixed(a_length)!=a) a_length++;
-    while (b.toFixed(b_length)!=b) b_length++;
-    console.log((a+b).toFixed(a_length>b_length? a_length: b_length));
-}
-
-addPoints(0.21354, 0.1)   // 0.31354
-addPoints(0.14, 0.28)     // 0.42
-addPoints(0.34, 0.226)    // 0.566
+// addPoints(0.21354, 0.1)   // 0.31354
+// addPoints(0.14, 0.28)     // 0.42
+// addPoints(0.34, 0.226)    // 0.566
 
 
 
@@ -90,7 +94,7 @@ f3(hong), f3(lee);
 
 
 
-
+/*
 console.log('\n--다음 user 객체에서 passwd 프로퍼티를 제외한 데이터를 userInfo 라는 변수에 할당하시오.--');
 // 출력결과: {id: 1, name: 'Hong', addr: 'Seoul'}
 const userI = {id: 1, name: 'Hong', passwd: 'xxx', addr: 'Seoul'}
